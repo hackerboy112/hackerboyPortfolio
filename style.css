@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #000;
+}
+
+.container {
+    max-width: 1100px;
+    min-height: 90vh;
+    max-height: 90vh;
+    width: 90%;
+    background-color: #e6e6e6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    padding-right: 2vw;
+}
+
+nav a:hover {
+
+    color: #8f7c58;
+    border-radius: 0 12px 0 12px;
+    border-color: black;
+
+}
+
+br {
+    display:block
+}
+
+.main-content-wrapper {
+    display: flex;
+    align-items:center;
+    gap: 20px;
+}
+
+.main-content {
+    background-color: #c0b3b3;
+    flex: 2;
+    height: 400px;
+    max-width: 75%;
+    border-radius: 0 15px 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 640px;
+    max-height: 400px;
+}
+
+aside {
+margin-top: 50px;
+padding: 10px;
+    border-radius: 15px 0;
+    display: flex;
+    background-color: #d3d3d3;
+    height: auto;
+    max-width: 20%;
+}
+
+.contact-content {
+    flex: 2;
+    text-align: center;
+    max-width: 400px;
+    color: rgb(185, 187, 219);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #8796d8;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3a3b39;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contactForm label {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#contactForm input, 
+#contactForm textarea {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+
+#contactForm button {
+    margin-top: 15px;
+    padding-top: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+#thankYouMessage {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8796d8;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+@media (max-width: 480px) { 
+
+    .main-content, .contact-content {
+        max-width: 240px;
+        max-height: 400px;
+    }
+
+    #contactButton {
+        max-width: 80%;
+
+    }
+
+    #contactForm {
+        max-width: 80%;
+
+    }
+    #contactForm button {
+        padding: 0 15px;
+        margin-top: 5px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        max-width: 50px;
+    }
+
+    p {
+        font-size: 11px;
+        font-weight: bold;
+
+    }
+
+    .main-content-wrapper aside {
+        width: 40%;
+        max-width: 40%;
+        margin-bottom: 10px;
+
+    }
+
+    .main-content-wrapper aside p {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+}
+
+footer {
+    text-align: start;
+
+    padding: 15px;
+    border-top: 1px solid #dcdcdc;
+    color:#1a1818;
+    margin-bottom: auto;
+    width: 100%;
+    position: end absolute;
+}
+
+footer p {
+    font-size: 10px;
+    margin: 0;
+}
+
