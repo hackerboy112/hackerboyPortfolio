@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +26,7 @@ body {
     flex-direction: column;
     gap: 20px;
     height: auto;
+    position: relative;
 
 
 }
@@ -72,6 +74,7 @@ br {
     gap: 20px;
 }
 
+
 .main-content {
     background-color: #c0b3b3;
     flex: 2;
@@ -83,7 +86,9 @@ br {
     justify-content: center;
     max-width: 640px;
     max-height: 400px;
+
 }
+
 
 aside {
 margin-top: 50px;
@@ -164,10 +169,63 @@ button:hover {
     transition: background-color 0.3s;
 
 }
-@media (max-width: 480px) { 
+
+@media (min-width: 768px) { 
+
+    .main-content-wrapper {
+        max-width: 95%;
+    }
 
     .main-content, .contact-content {
-        max-width: 240px;
+        max-height: 400px;
+    }
+
+    #contactButton {
+        max-width: 80%;
+
+    }
+
+    #contactForm {
+        max-width: 80%;
+
+    }
+    #contactForm button {
+        padding: 0 15px;
+        margin-top: 5px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        max-width: 50px;
+    }
+
+    p {
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .main-content-wrapper aside {
+        width: 40%;
+        max-width: 40%;
+        margin-bottom: 10px;
+
+    }
+
+    .main-content-wrapper aside p {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+}
+@media (min-width: 375px) { 
+
+    .main-content-wrapper {
+        max-width: 95%;
+    }
+
+    .main-content, .contact-content {
         max-height: 400px;
     }
 
@@ -210,7 +268,94 @@ button:hover {
         padding: 0;
         max-width: 100%;
     }
+
+        .footer {
+
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
+}
+
+@media (max-width: 380px) { 
+
+
+div.container {
+    min-height: 850px;
+   
+}
+    .main-content-wrapper {
+        max-width: 95%;
+    }
+
+    .main-content {
+        transform: scale(1);
+        max-width: 80%;
+    }
+
+    
+.body{
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+    .contact-content {
+        
+
+    }
+
+    #contactButton {
+        max-width: 80%;
+
+    }
+
+    #contactForm {
+        max-width: 80%;
+
+    }
+    #contactForm button {
+        padding: 0 15px;
+        margin-top: 5px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        max-width: 50px;
+    }
+
+    p {
+        font-size: 11px;
+        font-weight: bold;
+
+    }
+
+    .main-content-wrapper aside {
+        width: 40%;
+        max-width: 40%;
+        margin-bottom: 10px;
+
+    }
+
+    .main-content-wrapper aside p {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    footer {
+
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+}
+
 
 footer {
     text-align: start;
@@ -218,9 +363,12 @@ footer {
     padding: 15px;
     border-top: 1px solid #dcdcdc;
     color:#1a1818;
-    margin-bottom: auto;
+    margin-bottom: 2Opx;
     width: 100%;
-    position: end absolute;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
 }
 
 footer p {
